@@ -65,6 +65,11 @@ typedef struct print_helper_s
 } printh_t;
 
 int _printf(const char *format, ...);
+int _putchar(char c);
+int print_str(char *str);
+int print_decimal(int value);
+long long int power(int base, int x);
+long long convertToDecimal(int number, int base);
 int handle_alpha_percent(printh_t *help_s, va_list args);
 char *create_buff(unsigned int bytes);
 unsigned int copy_buff(char *str, printh_t *help_s);
