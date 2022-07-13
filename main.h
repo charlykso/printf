@@ -7,5 +7,6 @@ int _putchar(char c);
 int print_str(char *str);
 int print_decimal(int value);
 int print_binary(int number);
+int print_unsigned(unsigned int number);
 
 #endif /* _MAIN_H_ */
