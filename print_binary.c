@@ -7,10 +7,10 @@
 * Return: the count number of the binary
 */
 
-int print_binary(unsigned int number)
+int print_binary(int number)
 {
-	int arr[32];
-	unsigned int i = 0, count = 0;
+	int arr[32], count = 0;
+	int i = 0;
 
 	while (number >= 2)
 	{
