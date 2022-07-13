@@ -14,9 +14,9 @@ int print_binary(int number)
 
 	while (number >= 2)
 	{
-		  arr[i] = number % 2;
-		  number /= 2;
-		  i++;
+		arr[i] = number % 2;
+		number /= 2;
+		i++;
 	}
 	arr[i] = number;
 
