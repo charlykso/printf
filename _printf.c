@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-	var_start(data, format);
+	va_start(data, format);
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] != ' ')
 		{
-			switch(format[i + 1])
+			switch (format[i + 1])
 			{
 				case 'c':
 					count += _putchar(va_arg(data, int));
@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					break;
 				case 'd':
-					count += print_decimal(var_arg(data, int));
+					count += print_decimal(va_arg(data, int));
 					break;
 				case 'i':
 					count += print_decimal(va_arg(data, int));
