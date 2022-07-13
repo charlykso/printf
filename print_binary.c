@@ -12,6 +12,8 @@ int print_binary(int number)
 	int arr[32], count = 0;
 	int i = 0;
 
+	if (number < 0)
+		return (-1);
 	while (number >= 2)
 	{
 		arr[i] = number % 2;
